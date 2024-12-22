@@ -1,0 +1,35 @@
+nav {
+    height: 10%;
+    font-family: "Roboto Slab", serif;
+    font-weight: 600;
+    color: #F1FAEE;
+    background: #1D3557;
+}
+
+ul li:hover {
+    color: #E63946;
+}
+
+button, .options li {
+    position: relative;
+}
+
+button a::after, .options li::after {
+    content: '';
+    background-color: #A8DADC;
+    height: 2px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 0;
+    transition: width 0.5s ease;
+}
+
+button a:hover, .options li:hover {
+    color: #E63946;
+}
+
+button a:hover::after, .options li:hover::after {
+    width: 100%;
+}

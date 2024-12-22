@@ -1,0 +1,22 @@
+.carousel {
+    animation: scrollVertical 8s linear infinite;
+}
+
+.carousel img {
+    width: 130px;
+    margin: 10px 0;
+    object-fit: contain;
+}
+
+@keyframes scrollVertical {
+    0% {
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(-50%);
+    }
+}
+
+.right .carousel {
+    will-change: transform;
+}
